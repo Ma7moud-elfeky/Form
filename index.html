@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="image/x-icon" rel="icon" href="./assets/images/favicon.ico" />
+    <style>
+      body {
+        background-color: #6792a3;
+      }
+      .divform {
+        text-align: left;
+        display: block;
+        width: fit-content;
+        overflow: hidden;
+      }
+      .titel {
+        text-align: center;
+        width: 100%;
+        color: #676769;
+        background-color: #eff0f2;
+        padding: 10px 0;
+        font-size: 20px;
+        border: 1px solid #eff0f2;
+        border-radius: 5px 5px 0 0;
+        margin: 0;
+      }
+      form {
+        padding: 10px 20px;
+        width: 100%;
+        margin: 0;
+        background-color: #fefefe;
+        border: 1px solid #fefefe;
+      }
+      #text {
+        width: 80%;
+        height: 50px;
+      }
+      #head {
+        display: block;
+        font-size: 20px;
+        color: #51b59b;
+      }
+      .fix_class {
+        display: flex;
+      }
+      #mail {
+        width: 300px;
+      }
+      dl {
+        width: fit-content;
+        padding: 0;
+      }
+      .select {
+        display: flex;
+      }
+      .gender {
+        padding-right: 50px;
+      }
+      .hobby {
+        padding-left: 50px;
+      }
+      .check1,
+      .Rad1 {
+        width: 10px !important;
+      }
+      .encome {
+        padding-right: 100px;
+      }
+      .name {
+        padding-right: 100px;
+      }
+      .pass {
+        padding-right: 100px;
+      }
+      .buttom {
+        padding: 10px;
+        border: 1px solid #eff0f2;
+        border-radius: 0 0px 5px 5px;
+        background-color: #eff0f2;
+        display: flex;
+        justify-content: space-between;
+      }
+      .buttom input {
+        width: 100px;
+        margin: 5px;
+        padding: 10px;
+        background-color: #51b59b;
+        color: #ffff;
+        cursor: pointer;
+        border: none;
+      }
+      .buttom span {
+        color: #676769;
+      }
+    </style>
+    <title>Task about form</title>
+  </head>
+  <body>
+    <center>
+      <div class="divform">
+        <h3 class="titel">Creat Account</h3>
+        <form action="#">
+          <div class="fix_class">
+            <div class="name">
+              <label for="First Name" id="head"> First Name*</label><br />
+              <input type="text" placeholder="Enter your name" />
+            </div>
+            <div>
+              <label for="Last Name" id="head"> Last Name*</label><br />
+
+              <input type="text" placeholder="Enter your name" />
+            </div>
+          </div>
+          <br />
+
+          <div>
+            <label for="Email" id="head"> Email*</label><br />
+            <input type="email" placeholder="Enter your Email" id="mail" />
+          </div>
+          <br />
+
+          <div class="fix_class">
+            <div class="pass">
+              <label for="Passward" id="head"> Passward*</label> <br />
+              <input type="password" placeholder="Enter your Passward" />
+            </div>
+            <div>
+              <label for="Confirm Passward" id="head"> Confirm Passward*</label>
+              <br />
+
+              <input type="password" placeholder="Enter your password again" />
+            </div>
+          </div>
+
+          <br />
+          <div class="select">
+            <div class="gender">
+              <label for="Gender" id="head">Gender*</label><br />
+              <input id="Rad1" type="radio" value="Male" name="Gender-1" />
+              <label for="Male">Male</label>
+              <input id="Rad1" type="radio" value="Female" name="Gender-1" />
+              <label for="Femal">Femal</label>
+            </div>
+            <div class="hobby">
+              <label for="Hobbies" id="head"> Hobbies</label> <br />
+              <input id="check1" type="checkbox" value="Music" name="Hobb_1" />
+              <label for="Music"> Music</label>
+              <input id="check1" type="checkbox" value="Music" name="Hobb_2" />
+              <label for="Music"> Music</label>
+              <input id="check1" type="checkbox" value="Music" name="Hobb_3" />
+              <label for="Music"> Music</label><br />
+            </div>
+          </div>
+          <br />
+          <div class="fix_class">
+            <div class="encome">
+              <label for="Encome" id="head">Source For Encome</label> <br />
+              <select name="Encome" id="Encome">
+                <option value="Embloyed">Embloyed</option>
+                <option value="Free Work">Free Work</option>
+                <option value="Streamer">Streamer</option>
+              </select>
+            </div>
+            <div>
+              <label for="income" id="head">income</label> <br />
+              <input type="range" name="income" id="income" />
+            </div>
+          </div>
+          <div class="fix_class">
+            <div>
+              <h5 id="head">Upload Profile Picture</h5>
+              <input type="file" name="" id="" />
+            </div>
+            <div>
+              <h5 for="Age" id="head">Age</h5>
+              <input type="number" name="" id="" /><br />
+            </div>
+          </div>
+          <h4 id="head">Bio</h4>
+          <textarea name="Bio" id="text"></textarea>
+        </form>
+        <div class="buttom">
+          <span> *required </span>
+          <input type="button" value="Creat" />
+        </div>
+      </div>
+    </center>
+  </body>
+</html>
